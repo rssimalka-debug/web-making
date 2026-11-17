@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    isolation: isolate;
+}
+
+.live-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.live-background::before {
+    content: "";
+    position: absolute;
+    inset: -5%;
+    background: url("background.jpg") center / cover no-repeat;
+    animation: photoMove 15s ease-in-out infinite alternate;
+}
+
+@keyframes photoMove {
+    from {
+        transform: scale(1) translateX(-1%);
+    }
+
+    to {
+        transform: scale(1.12) translateX(1%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .live-background::before {
+        animation: none;
+    }
+}
+
+.verse-box{
+   max-width: 600px;
+   margin:30px auto;
+   padding:25px;
+   background:rgba(255,255,255,0.85);
+   border-radius:15px;
+   text-align:center;
+   color: #000066;
+
+
+}
+#bible-verse{
+    font-size:22px;
+    line-height:1.6;
+
+}
+
+#verse-button {
+    padding:12px 24px;
+    background:#333366;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+
+
+}
+
+#verse-button:hover {
+    background: #6633CC;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Sri Lanka</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header class="header container">
+        <a href="#home" class="logo">Travel<span>Lk.</span></a>
+
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-content">
+                <span class="tagline">
+                    EXPLORE &bull; DREAM &bull; DISCOVER
+                </span>
+
+                <h1>Your next adventure starts here.</h1>
+
+                <p>
+                    Discover misty mountains, golden beaches and
+                    unforgettable places across Sri Lanka.
+                </p>
+
+                <a href="#destinations" class="explore-button">
+                    Explore Destinations →
+                </a>
+                <form
+    class="google-search"
+    action="https://www.google.com/search"
+    method="get"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <input
+        type="search"
+        name="q"
+        placeholder="Search places in Sri Lanka..."
+        aria-label="Search Google"
+        required
+    >
+
+    <button type="submit">Search 🔍</button>
+</form>
+            </div>
+
+            <div class="tour-slider" tabindex="0"
+                 aria-label="Sri Lanka photo slideshow">
+                <div class="tour-track">
+                    <figure class="tour-slide">
+                        <img src="sri lanka.jpg"
+                             alt="Map of Sri Lanka"
+                             class="full-photo">
+                        <figcaption>Sri Lanka</figcaption>
+                    </figure>
+
+                    <figure class="tour-slide">
+                        <img src="ella.jpg" alt="Ella hills">
+                        <figcaption>Ella</figcaption>
+                    </figure>
+
+                    <figure class="tour-slide">
+                        <img src="galle.jpg"
+                             alt="Galle Fort"
+                             class="full-photo">
+                        <figcaption>Galle Fort</figcaption>
+                    </figure>
+
+                    <figure class="tour-slide">
+                        <img src="miri.jpg" alt="Mirissa Beach">
+                        <figcaption>Mirissa Beach</figcaption>
+                    </figure>
+
+                    <!-- Duplicate the first slide for a smooth loop -->
+                    <figure class="tour-slide" aria-hidden="true">
+                        <img src="sri lanka.jpg"
+                             alt=""
+                             class="full-photo">
+                        <figcaption>Sri Lanka</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinations" class="destinations container">
+            <span class="tagline">WHERE WILL YOU GO?</span>
+            <h2>TOP Of The List Popular destinations</h2>
+            <p class="section-description">
+                Three beautiful places to start exploring.
+            </p>
+
+            <div class="destination-grid">
+
+                <!-- Ella -->
+                <article class="destination-card">
+                    <img class="destination-photo"
+                         src="ella.jpg"
+                         alt="Green hills and scenery in Ella"
+                         loading="lazy">
+
+                    <div class="destination-info">
+                        <span class="category">MOUNTAINS</span>
+                        <h3>Ella</h3>
+                        <p>
+                            Explore green hills, scenic trails
+                            and the famous Nine Arch Bridge.
+                        </p>
+
+                        <details class="place-details">
+                            <summary>View Details</summary>
+
+                            <div class="details-content">
+                                <p>
+                                    Ella is surrounded by green mountains,
+                                    tea plantations and waterfalls.
+                                </p>
+
+                                <h4>Places to visit</h4>
+                                <ul>
+                                    <li>Nine Arch Bridge</li>
+                                    <li>Little Adam’s Peak</li>
+                                    <li>Ella Rock</li>
+                                    <li>Ravana Falls</li>
+                                </ul>
+
+                                <h4>Things to do</h4>
+                                <p>
+                                    Enjoy hiking, photography, scenic train
+                                    journeys and visits to tea plantations.
+                                </p>
+
+                                <a class="map-link"
+                                   href="https://www.google.com/maps/search/?api=1&amp;query=Ella+Sri+Lanka"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    View on Google Maps ↗
+                                </a>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <!-- Mirissa -->
+                <article class="destination-card">
+                    <img class="destination-photo"
+                         src="miri.jpg"
+                         alt="Mirissa Beach"
+                         loading="lazy">
+
+                    <div class="destination-info">
+                        <span class="category">BEACHES</span>
+                        <h3>Mirissa</h3>
+                        <p>
+                            Enjoy ocean views, sandy beaches
+                            and peaceful sunsets.
+                        </p>
+
+                        <details class="place-details">
+                            <summary>View Details</summary>
+
+                            <div class="details-content">
+                                <p>
+                                    Mirissa is a coastal destination in
+                                    southern Sri Lanka, known for its
+                                    beaches and ocean views.
+                                </p>
+
+                                <h4>Places to visit</h4>
+                                <ul>
+                                    <li>Mirissa Beach</li>
+                                    <li>Coconut Tree Hill</li>
+                                    <li>Secret Beach</li>
+                                </ul>
+
+                                <h4>Things to do</h4>
+                                <p>
+                                    Enjoy beach walks, sunset photography
+                                    and local seafood.
+                                </p>
+
+                                <a class="map-link"
+                                   href="https://www.google.com/maps/search/?api=1&amp;query=Mirissa+Sri+Lanka"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    View on Google Maps ↗
+                                </a>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <!-- Sigiriya -->
+                <article class="destination-card">
+                    <img class="destination-photo"
+                         src="sigi.jpg"
+                         alt="Sigiriya Rock Fortress"
+                         loading="lazy">
+
+                    <div class="destination-info">
+                        <span class="category">HERITAGE</span>
+                        <h3>Sigiriya</h3>
+                        <p>
+                            Discover ancient history, landscaped
+                            gardens and incredible views.
+                        </p>
+
+                        <details class="place-details">
+                            <summary>View Details</summary>
+
+                            <div class="details-content">
+                                <p>
+                                    Sigiriya is an ancient rock fortress
+                                    with landscaped gardens, historic
+                                    paintings and panoramic views.
+                                </p>
+
+                                <h4>Places to visit</h4>
+                                <ul>
+                                    <li>Sigiriya Rock Fortress</li>
+                                    <li>Sigiriya Museum</li>
+                                    <li>Water Gardens</li>
+                                    <li>Nearby Pidurangala Rock</li>
+                                </ul>
+
+                                <h4>Things to do</h4>
+                                <p>
+                                    Explore ancient ruins, discover
+                                    Sri Lankan history and enjoy
+                                    landscape photography.
+                                </p>
+
+                                <a class="map-link"
+                                   href="https://www.google.com/maps/search/?api=1&amp;query=Sigiriya+Sri+Lanka"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    View on Google Maps ↗
+                                </a>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <span class="tagline">ABOUT TRAVELLK</span>
+            <h2>Explore with curiosity.</h2>
+            <p>
+                A little inspiration for your next journey.
+                Discover a new place, respect its people and leave
+                nature as beautiful as you found it.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>TravelLK. — Made for curious travellers.</p>
+    </footer>
+</body>
+</html>
